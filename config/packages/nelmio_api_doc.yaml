@@ -1,0 +1,28 @@
+nelmio_api_doc:
+    documentation:
+        info:
+            title: api
+            description: api
+            version: 2.2.2
+        components:
+            securitySchemes:
+                Basic:
+                    type: http
+                    scheme: basic
+                Bearer:
+                    type: apiKey
+                    name: Authorization
+                    in: header
+    areas:
+        default:
+            path_patterns:
+                - '^/api'
+        area_1:
+            name_patterns:
+               - '^route_1'
+        area_2:
+            name_patterns:
+               - '^route_2'
+        area_3:
+            name_patterns:
+               - '^route_3'
