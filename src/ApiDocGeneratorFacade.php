@@ -18,6 +18,7 @@ class ApiDocGeneratorFacade
         $areas = [
             'area_1',
             'area_2',
+            'area_3'
         ];
 
         $apiDocGenerators = array_map(fn (string $area) => $this->apiDocGeneratorLocator->get($area), $areas);
